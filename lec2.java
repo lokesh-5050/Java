@@ -33,7 +33,6 @@
 //         b = 20;
 //         name = "Yash";
 
-
 //     }
 // }
 
@@ -48,14 +47,12 @@
 // 7 float - 4 bytes
 // 8 double - 8 bytes
 
-
 // NON-PRIMITIVE DATA TYPES
 // 1 String
 // 2 Array
 // 3 Class
 // 4 Object
 // 5 Interface
-
 
 // public class lec2 {
 //     public static void main(String[] args) {
@@ -82,7 +79,6 @@
 // 50/10-5
 // answer => 0 ;
 
-
 //INPUTS FROM USER
 // import java.util.*;
 
@@ -96,10 +92,9 @@
 //         //  sc.nextLong(); //nextLine() to print the whole line
 
 //         System.out.println(name);
-        
+
 //     }
 // }
-
 
 //QUESTION of whole lec 2
 // Q1.  Take 2 varibales 'a' & 'b' and print their sum.
@@ -130,27 +125,173 @@
 //     }
 // }
 
-
-
 // Q3. Make a program that prints the table of a number that is input by the user. 
-import java.util.*;
+// import java.util.*;
 
+// public class lec2 {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int input = sc.nextInt();
+//         System.out.println("");
+//         System.out.println(input * 1);
+//         System.out.println(input * 2);
+//         System.out.println(input * 3);
+//         System.out.println(input * 4);
+//         System.out.println(input * 5);
+//         System.out.println(input * 6);
+//         System.out.println(input * 7);
+//         System.out.println(input * 8);
+//         System.out.println(input * 9);
+//         System.out.println(input * 10);
+
+//     }
+// }
+
+// ***********************************
+//IF ELSE STATEMENTS FROM HERE
+
+//Q1. firstly lets understand if else on odd and even cases
+
+//so im gonna take a number as a input
+
+// import java.util.*;
+// public class lec2 {
+//     public static void main(String[] args) {
+//         //input
+//         Scanner sc = new Scanner(System.in);
+//         int input = sc.nextInt();
+//         if(input%2 == 0){
+//             System.out.println(input + " is even");
+//         }else{
+//             System.out.println(input + " is odd");
+//         }
+//     }
+// }
+
+// Q2. take two input from user and check
+//whether a == b then print equal , if a > b then print a is greator and same less
+
+// import java.util.*;
+
+// public class lec2{
+//     public static void main(String[] args) {
+//         //taking two inputs from user
+//         Scanner sc = new Scanner(System.in);
+//         Scanner sb = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         if(a==b){
+//             System.out.println("Both numbers are Equal");
+//         }else if(a > b){
+//             System.out.println("a is greator than b");
+//         }else if(a < b){
+//             System.out.println("b is greator than a");
+//         }
+
+//     }
+// }
+
+// ***************************************
+// SWITCH STATEMENT JAVA
+
+// Q3. if 1 so print hello , 2 then namaste then 3 is Bonjor
+// import java.util.*;
+
+// public class lec2{
+//     public static void main(String[] args) {
+//         //taking two inputs from user
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         // if(a == 1){
+//         //     System.out.println("Hello");
+//         // }else if(a == 2){
+//         //     System.out.println("Namaste");
+//         // }else if(a == 3){
+//         //     System.out.println("Bonjor");
+//         // }else{
+//         //     System.out.println("Only 1,2 & 3 are allowed");
+//         // }
+
+//         switch(a){
+//             case 1 : System.out.println("Hello");
+//             break;
+//             case 2 : System.out.println("Namaste");
+//             break;
+//             case 3 : System.out.println("Bonjour");
+//             break;
+//             default: System.out.println("Invalid input");
+//         }
+
+//     }
+// }
+
+// Q4. Make a Calculator. Take 2 numbers (a & b) from the user and an operation as follows : 
+// 1 : + (Addition) a + b
+// 2 : - (Subtraction) a - b
+// 3 : * (Multiplication) a * b
+// 4 : / (Division) a / b
+// 5 : % (Modulo or remainder) a % b
+// Calculate the result according to the operation given and display it to the user.
+
+// import java.util.*;
+
+// public class lec2{
+//     public static void main(String[] args) {
+//         //taking two inputs from user
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         int op = sc.nextInt();
+//         switch(op){
+//             case 1 : System.out.println("Sum of a & b is " + (a + b));
+//             break;
+//             case 2 : System.out.println("Subtraction of a & b is " + (a - b));
+//             break;
+//             case 3 : System.out.println("Product of a & b is " + (a*b));
+//             break;
+//             case 4 : System.out.println("Modulo of a & b is " + (a%b));
+//             break;
+//         }
+
+//     }
+// }
+
+// Q5. Ask the user to enter the number of the month & print the name of the month.
+//  For eg - For ‘1’ print ‘January’, ‘2’ print ‘February’ & so on.
+
+import java.util.*;
 
 public class lec2 {
     public static void main(String[] args) {
+        //take int from user
         Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-        System.out.println("");
-        System.out.println(input * 1);
-        System.out.println(input * 2);
-        System.out.println(input * 3);
-        System.out.println(input * 4);
-        System.out.println(input * 5);
-        System.out.println(input * 6);
-        System.out.println(input * 7);
-        System.out.println(input * 8);
-        System.out.println(input * 9);
-        System.out.println(input * 10);
-
-    }
+        int monthNo = sc.nextInt();
+        switch(monthNo){
+            case 1 : System.out.println("January");
+            break;
+            case 2 : System.out.println("Feburary");
+            break;
+            case 3 : System.out.println("March");
+            break;
+            case 4 : System.out.println("April");
+            break;
+            case 5 : System.out.println("May");
+            break;
+            case 6 : System.out.println("June");
+            break;
+            case 7 : System.out.println("July");
+            break;
+            case 8 : System.out.println("August");
+            break;
+            case 9 : System.out.println("September");
+            break;
+            case 10 : System.out.println("October");
+            break;
+            case 11: System.out.println("November");
+            break;
+            case 12 : System.out.println("December");
+            break;
+            default : System.out.println("There are only 12 months in a year !!!");
+        }
+        }
 }

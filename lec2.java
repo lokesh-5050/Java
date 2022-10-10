@@ -259,39 +259,160 @@
 // Q5. Ask the user to enter the number of the month & print the name of the month.
 //  For eg - For ‘1’ print ‘January’, ‘2’ print ‘February’ & so on.
 
-import java.util.*;
+// import java.util.*;
 
-public class lec2 {
-    public static void main(String[] args) {
-        //take int from user
-        Scanner sc = new Scanner(System.in);
-        int monthNo = sc.nextInt();
-        switch(monthNo){
-            case 1 : System.out.println("January");
-            break;
-            case 2 : System.out.println("Feburary");
-            break;
-            case 3 : System.out.println("March");
-            break;
-            case 4 : System.out.println("April");
-            break;
-            case 5 : System.out.println("May");
-            break;
-            case 6 : System.out.println("June");
-            break;
-            case 7 : System.out.println("July");
-            break;
-            case 8 : System.out.println("August");
-            break;
-            case 9 : System.out.println("September");
-            break;
-            case 10 : System.out.println("October");
-            break;
-            case 11: System.out.println("November");
-            break;
-            case 12 : System.out.println("December");
-            break;
-            default : System.out.println("There are only 12 months in a year !!!");
-        }
-        }
-}
+// public class lec2 {
+//     public static void main(String[] args) {
+//         //take int from user
+//         Scanner sc = new Scanner(System.in);
+//         int monthNo = sc.nextInt();
+//         switch(monthNo){
+//             case 1 : System.out.println("January");
+//             break;
+//             case 2 : System.out.println("Feburary");
+//             break;
+//             case 3 : System.out.println("March");
+//             break;
+//             case 4 : System.out.println("April");
+//             break;
+//             case 5 : System.out.println("May");
+//             break;
+//             case 6 : System.out.println("June");
+//             break;
+//             case 7 : System.out.println("July");
+//             break;
+//             case 8 : System.out.println("August");
+//             break;
+//             case 9 : System.out.println("September");
+//             break;
+//             case 10 : System.out.println("October");
+//             break;
+//             case 11: System.out.println("November");
+//             break;
+//             case 12 : System.out.println("December");
+//             break;
+//             default : System.out.println("There are only 12 months in a year !!!");
+//         }
+//         }
+// }
+
+
+
+// ************************
+// lec - 4 
+// Now learning about java Loops
+// for loop , while loop , do-while loop
+
+// first for loop
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         // for(int i = 0 ; i < 5 ; i++){
+//         //     System.out.println("Hello world");
+//         // }
+
+        
+//     }
+// }
+
+
+// // Q1. print 0 to 10
+// public class lec2 {
+//     public static void main(String args[]) {
+//         for(int i = 0 ; i < 11 ; i++){
+//             System.out.println(i);
+//         }
+//     }
+// }
+
+
+// // Q2. print 24 to 67
+// public class lec2 {
+//     public static void main(String args[]) {
+//         for(int i = 24 ; i < 68  ; i++){
+//             System.out.println(i);
+//         }
+//     }
+// }
+
+
+//******************************* 
+// Now while loop
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         int i = 0;
+//         while(i<5){
+//             System.out.println("hello");
+//             i++;
+//         }
+//     }
+// }
+
+
+// *******************
+// Now do-while loop
+// in this atleast one time will be done
+
+// public class lec2 {
+//     public static void main(String args[]){
+//         int i = 0;
+//         do{
+//             System.out.println(i);
+//             i++;
+//         }while(i < 5);
+//     }
+// }
+
+// Demontrating the while and do-while loops by giving them a false condition
+// public class lec2 {
+//         public static void main(String args[]){
+//             int i = 12;
+//             while(i < 11){
+//                 System.out.println(i+ "By while");
+//             }
+//             //in while loop nothing will be printed
+            
+
+//             do{
+//                 System.out.println(i + "By do-while");
+//             }while(i < 11);
+//             //do-while will print the false condition one time
+        
+//     }
+// }
+
+
+// Qs on loops
+
+// Q1. Print the sum of first n Natural numbers
+// import java.util.*;
+// public class lec2{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int sum = 0;
+//         for(int i = 1 ; i < n+1 ; i++){
+//             sum += i;
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+
+// Q2. Print the table of a number input by the user
+
+// import java.util.*;
+// public class lec2{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int input = sc.nextInt();
+//         int times = 0;
+//         for(int i = 1 ; i <= 10 ; i++){
+//             times = input * i;
+//             System.out.println(times);
+//         }
+
+//     }
+// }
+

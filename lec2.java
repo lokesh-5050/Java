@@ -296,8 +296,6 @@
 //         }
 // }
 
-
-
 // ************************
 // lec - 4 
 // Now learning about java Loops
@@ -311,10 +309,8 @@
 //         //     System.out.println("Hello world");
 //         // }
 
-        
 //     }
 // }
-
 
 // // Q1. print 0 to 10
 // public class lec2 {
@@ -325,7 +321,6 @@
 //     }
 // }
 
-
 // // Q2. print 24 to 67
 // public class lec2 {
 //     public static void main(String args[]) {
@@ -334,7 +329,6 @@
 //         }
 //     }
 // }
-
 
 //******************************* 
 // Now while loop
@@ -348,7 +342,6 @@
 //         }
 //     }
 // }
-
 
 // *******************
 // Now do-while loop
@@ -372,16 +365,14 @@
 //                 System.out.println(i+ "By while");
 //             }
 //             //in while loop nothing will be printed
-            
 
 //             do{
 //                 System.out.println(i + "By do-while");
 //             }while(i < 11);
 //             //do-while will print the false condition one time
-        
+
 //     }
 // }
-
 
 // Qs on loops
 
@@ -399,7 +390,6 @@
 //     }
 // }
 
-
 // Q2. Print the table of a number input by the user
 
 // import java.util.*;
@@ -416,3 +406,100 @@
 //     }
 // }
 
+// Q3. Print all even numbers till n.
+// import java.util.*;
+// public class lec2 {
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int inp = sc.nextInt();
+//         for(int i = 1 ; i <= inp ; i++){
+//             if(i%2 == 0){
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }
+
+// public class lec2 {
+//     public static void main(String args[]) {
+//         for (;;) {
+//             System.out.println("Apna College");
+//         }
+
+//     }
+// }
+
+// Q4. Make a menu driven program. The user can enter 2 numbers, either 1 or 0. 
+// If the user enters 1 then keep taking input from the user for a student’s marks(out of 100). 
+// If they enter 0 then stop.
+// If he/ she scores :
+// Marks >=90 -> print “This is Good”
+// 89 >= Marks >= 60 -> print “This is also Good”
+// 59 >= Marks >= 0 -> print “This is Good as well”
+// 	Because marks don’t matter but our effort does.
+
+// import java.util.*;
+
+// public class lec2 {
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int inp = sc.nextInt();
+
+//         if (inp == 1) {
+//             while (inp != 0) {
+//                 Scanner sb = new Scanner(System.in);
+//                 int inp2 = sb.nextInt();
+//                 int tot = 0;
+//                 for(int i = )
+                
+//                 System.out.println(tot +  " total marks!");
+//                 if (inp2 == 0) {
+//                     System.out.println(  " marks scored");
+//                     break;
+//                 }
+
+//             }
+//         }else if(inp == 0){
+//             System.out.println("Exit Successfully");
+//         }else {
+//             System.out.println("Only 0 & 1 inputs are allowed");
+//         }
+
+//     }
+// }
+
+// import java.util.*;
+
+// public class lec2 {
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int inp1 = sc.nextInt();
+
+//         if(inp1 == 1){
+//             int tot = 0;
+//             while (inp1 != 0) {
+//                 Scanner sb = new Scanner(System.in);
+//                 int inp2 = sb.nextInt();
+
+//                 tot += inp2;
+
+//                 if(inp2 == 0){
+
+//                     if(tot >= 90){
+//                         System.out.println("This is Excellent" + tot);
+//                     }else if(tot >= 70){
+//                         System.out.println("This is good" + tot);
+//                     }else if(tot >= 50){
+//                         System.out.println("nice" + tot);
+//                     }else if(tot >= 30){
+//                         System.out.println("Can do better!" + tot);
+//                     }else if(tot >= 10){
+//                         System.out.println("Wow!!! pdh le bc" + tot);
+//                     }
+//                     // System.out.println("total score" + tot);
+//                 }
+                
+//             }
+//         }
+//     }
+// }

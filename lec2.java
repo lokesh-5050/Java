@@ -810,22 +810,63 @@
 // 0101
 // 10101
 
+// public class lec2 {
+//     public static void main(String args[]) {
+//         int n = 5;
+//         // int number = 1;
+
+//         for (int i = 1; i <= n; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 int sum = i+j;
+//                 if(sum % 2 == 0){
+//                     System.out.print(1);
+
+//                 }else{
+//                     System.out.print(0);
+//                 }
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// Q . Print all even no. till n.
+// import java.util.*;
+
+// public class lec2 {
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         System.out.println();
+//         System.out.println();
+//         for (int i = 1; i <= n; i++) {
+
+//             if (i % 2 == 0) {
+//                 System.out.println(i);
+//             }else{}
+
+//         }
+
+//     }
+// }
+
+
+
+// Qs. Print if a number n is prime or not (Input n from the user). 
+import java.util.*;
+
 public class lec2 {
     public static void main(String args[]) {
-        int n = 5;
-        // int number = 1;
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                int sum = i+j;
-                if(sum % 2 == 0){
-                    System.out.print(1);
-                    
-                }else{
-                    System.out.print(0);
-                }
-            }
-            System.out.println();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println();
+        System.out.println();
+        
+        if(n%2 != 0){
+            System.out.print("Prime");
+        }else{
+            System.out.print("Even");
         }
 
     }

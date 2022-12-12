@@ -1,8 +1,7 @@
 // public class lec2 {
 //     public static void main(String[] args) {
-//         System.out.println("Hello world");
-//         // System.out.print("Hello world\n");
-//         // System.out.print("Hello world");
+//         System.out.println("Hello World");
+
 //     }
 // }
 
@@ -337,7 +336,7 @@
 //     public static void main(String args[]) {
 //         int i = 0;
 //         while(i<5){
-//             System.out.println("hello");
+//             System.out.println(i);
 //             i++;
 //         }
 //     }
@@ -353,7 +352,7 @@
 //         do{
 //             System.out.println(i);
 //             i++;
-//         }while(i < 5);
+//         }while(i < 0);
 //     }
 // }
 
@@ -451,7 +450,7 @@
 //                 int inp2 = sb.nextInt();
 //                 int tot = 0;
 //                 for(int i = )
-                
+
 //                 System.out.println(tot +  " total marks!");
 //                 if (inp2 == 0) {
 //                     System.out.println(  " marks scored");
@@ -486,20 +485,297 @@
 //                 if(inp2 == 0){
 
 //                     if(tot >= 90){
-//                         System.out.println("This is Excellent" + tot);
+//                         System.out.println("This is Excellent " + tot);
 //                     }else if(tot >= 70){
-//                         System.out.println("This is good" + tot);
+//                         System.out.println("This is good " + tot);
 //                     }else if(tot >= 50){
-//                         System.out.println("nice" + tot);
+//                         System.out.println("nice " + tot);
 //                     }else if(tot >= 30){
-//                         System.out.println("Can do better!" + tot);
+//                         System.out.println("Can do better! " + tot);
 //                     }else if(tot >= 10){
-//                         System.out.println("Wow!!! pdh le bc" + tot);
+//                         System.out.println("Wow!!! pdh le bc " + tot);
 //                     }
-//                     // System.out.println("total score" + tot);
+//                     System.out.println("total score" + tot);
 //                 }
-                
+
 //             }
 //         }
 //     }
 // }
+
+//solving the same question with do-while loop
+
+// import java.util.*;
+
+// public class lec2{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int inp1 = sc.nextInt();
+//         int tot = 0;
+//         do {
+//             System.out.println("Enter the marks");
+//             Scanner sb = new Scanner(System.in);
+//             int inp2 = sb.nextInt();
+
+//             tot += inp2;
+//             if(inp2 == 0){
+//                 if(tot > 90){
+//                     System.out.println("Excellent"+ tot);
+//                 }else if(tot > 70){
+//                     System.out.println("Good"+ tot);
+//                 }else if(tot > 50){
+//                     System.out.println("Nice"+ tot);
+//                 }else if(tot > 30){
+//                     System.out.println("can do better"+ tot);
+//                 }else if(tot > 20){
+//                     System.out.println("Padh le bhai!!!"+ tot);
+//                 }else if(tot < 10){
+//                     System.out.println("Failed the test"+ tot);
+//                 }
+//             }
+
+//         } while (inp1 == 1);
+//         if(inp1 == 0){
+//             System.out.println("Successfully exited the program!");
+//         }
+
+//     }
+// }
+
+// Q5. Print if a number is prime or not (Input n from the user).
+
+// import java.util.*;
+// public class lec2 {
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         if(n%n == 0){
+//             System.out.println(n + " is a prime number");
+//         }else{
+//             System.out.println(n + " is a not prime number");
+
+//         }
+//     }
+// }
+
+// Q4. {REPEAT} Make a menu driven program. The user can enter 2 numbers, either 1 or 0. 
+// If the user enters 1 then keep taking input from the user for a student’s marks(out of 100). 
+// If they enter 0 then stop.
+// If he/ she scores :
+// Marks >=90 -> print “This is Good”
+// 89 >= Marks >= 60 -> print “This is also Good”
+// 59 >= Marks >= 0 -> print “This is Good as well”
+// 	Because marks don’t matter but our effort does.
+
+// import java.util.*;
+
+// public class lec2{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int inp1 = sc.nextInt();
+
+//         int tot = 0;
+//         do {
+//             System.out.println("Enter marks");
+//             Scanner sb = new Scanner(System.in);
+//             int inSide = sb.nextInt();
+//             tot += inSide;
+
+//             if(inSide == 0){
+//                 if(tot >90){
+//                     System.out.println("Excellent "  + tot );
+//                 }else if(tot > 70){
+//                     System.out.println("Awesome " + tot);
+//                 }else if(tot >50){
+//                     System.out.println("Good " + tot);
+//                 }else if(tot >30){
+//                     System.out.println("Nice " + tot);
+//                 }else if(tot >=0){
+//                     System.out.println("Can do better " + tot);
+//                 }
+//                 System.out.println("Successfully exited the program");
+//                 break;
+//             }
+//         } while (inp1 == 1);
+//     }
+// }
+
+// @@@@@@@@@@@@@@@@@@@@@@@@
+// Pattern Questions
+// Q1. *****
+// *****
+// *****
+// *****
+// public class lec2{
+//     public static void main(String args[]){
+//         int row = 5;
+//         int column = 4;
+//         //oute loop
+//         for (int i = 1; i <= column; i++) {
+//             //inneer loop
+//             for (int j = 1; j <= row; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println("*");
+//         }
+
+//     }
+// }
+
+/* Q2. *****
+ *     *   *
+ *     *   *
+ *     *****       
+ */
+
+//  public class lec2{
+//     public static void main(String args[]){
+//         int row = 5;
+//         int column = 4;
+
+//         //outer loop
+//         for (int i = 1; i <= column; i++) {
+//             //inner loop
+//             for (int j = 1; j <= row; j++) {
+//                 if(j == 2){
+//                     System.out.print("*"+" "+" "+" "+"*");
+//                     // System.out.print("*");
+//                 }
+//             }
+//             System.out.println();
+//         }
+
+//     }
+//  }
+
+// Q. Revsion
+
+// to print 
+
+// *****
+// *****
+// *****
+// *****
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         for(int i= 1 ; i<=4 ; i++){
+//             for(int j = 1 ; j<=5 ; j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println("");
+//         }
+//     }
+// }
+
+// Q2. 
+
+// *****
+// *   *
+// *   *
+// *****
+
+// public class lec2{
+//     public static void main(String args[]){
+//         int r =4;
+//         int c =5;
+//         for(int i =1 ; i<=4 ; i++){
+//             for(int j =1 ; j<=5 ; j++){
+//                 if(i==1 || j==c || i==r || j==1){
+//                     System.out.print("*");
+//                 }else{
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// Q3.
+
+// *
+// **
+// ***
+// ****
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         int r =4;
+//         for(int i =1 ; i<=r ; i++){
+//             for(int j = 1 ; j<=i ; j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Q4.
+
+// ****
+// ***
+// **
+// *
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         int r= 4;
+//         for(int i=r ; i>=1 ; i--){
+//             for(int j=1 ; j<=i ; j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         }
+//     }
+
+// Q5.
+
+//     *
+//    **    
+//   ***
+//  ****
+
+// public class lec2{
+//         public static void main(String args[]) {
+//             int r =4; 
+
+//            for(int i = 1 ; i<=r ; i++){
+//             //inner Loop => space print
+//             for(int j =1 ; j<=r-i ; j++){
+//                 System.out.print(" ");
+//             }
+
+//             //inner Loop => star print 
+//             for(int j =1 ; j<= i  ; j++){
+//                 System.out.print("*");
+//             }
+
+//             System.out.println();
+
+//            }
+//         }
+//     }
+
+// Q6. 
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+public class lec2 {
+    public static void main(String args[]) {
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for(int j=1;j<=i ; j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}

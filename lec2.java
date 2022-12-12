@@ -851,23 +851,141 @@
 //     }
 // }
 
-
-
 // Qs. Print if a number n is prime or not (Input n from the user). 
-import java.util.*;
+// import java.util.*;
+
+// public class lec2 {
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         System.out.println();
+//         System.out.println();
+
+//         if(n%2 != 0){
+//             System.out.print("Prime");
+//         }else{
+//             System.out.print("Even");
+//         }
+
+//     }
+// }
+
+// ##############################################
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// Q. BUTTERFLY Questions
+// *      *
+// **    **    
+// ***  ***
+// ********
+// ********
+// ***  ***
+// **    **
+// *      *     
+// public class lec2 {
+//     public static void main(String args[]) {
+
+//         int r =4;
+//         int c =8;
+
+//         for(int i=1 ; i<=r ; i++){
+//             for(int j=1; j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             for(int j=1 ; j<=c-i*2 ; j++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+
+//         for(int i=r ; i>=0 ; i--){
+//             for(int j=1; j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             for(int j=1 ; j<=c-i*2 ; j++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// Q . Solid Rhombus
+
+//     *****
+//    *****    
+//   *****
+//  *****
+// *****   
+
+// public class lec2 {
+//     public static void main(String args[]) {
+
+//         int r = 5;
+//         int c = 9;
+
+//         for (int i = 1; i <= r; i++) {
+//             // lef -space
+//             for (int j = 1; j <= r - i; j++) {
+//                 System.out.print(" ");
+//             }
+
+//             // star
+//             for (int j = 1; j <= r; j++) {
+//                 System.out.print("*");
+//             }
+
+//             //right - space
+//             for(int j =1 ; j<=i-1 ; j++){
+//                 System.out.print(" ");
+//             }
+
+//             System.out.println();
+
+//         }
+
+//     }
+// }
+
+// Q . Hollow Rhombus
+
+//     *****
+//    *   *    
+//   *   *
+//  *   *
+// *****   
 
 public class lec2 {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        System.out.println();
-        System.out.println();
-        
-        if(n%2 != 0){
-            System.out.print("Prime");
-        }else{
-            System.out.print("Even");
-        }
+        int r= 5;
+        int c =9;
 
+        for(int i =1 ; i<=r ; i++){
+            for(int j = 1 ; j<=r-i ; j++){
+                System.out.print(" ");
+            }
+            for(int j =1 ; j<=r; j++){
+                if(i==1 || i==r){
+                    System.out.print("*");
+                }else if(j == r-1  || j==r-2 || j==r-3 || j==c-1 || j==c-2 || j==c-3){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            for(int j=1 ; j<=i-j ; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 }

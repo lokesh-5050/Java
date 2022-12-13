@@ -1021,7 +1021,7 @@
 // }
 
 
-// Q. Palindromic Pattern
+// Q.  Palindrome Pattern
         
         //     1
         //    212
@@ -1033,13 +1033,11 @@
 public class lec2{
     public static void main(String args[]) {
         int r= 5;
-
         for(int i=1 ; i<=r ; i++){
             //1st- spaces
             for(int j =1 ; i<=r-i ; j++){
                 System.out.print(" ");
             }
-
             //2nd- palindrome
             for(int j = 1 ; j<=)
         }

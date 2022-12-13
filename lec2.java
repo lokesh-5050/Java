@@ -964,28 +964,58 @@
 //  *   *
 // *****   
 
-public class lec2 {
-    public static void main(String args[]) {
-        int r= 5;
-        int c =9;
+// public class lec2 {
+//     public static void main(String args[]) {
+//         int r = 5;
+//         int c = 9;
 
-        for(int i =1 ; i<=r ; i++){
-            for(int j = 1 ; j<=r-i ; j++){
-                System.out.print(" ");
-            }
-            for(int j =1 ; j<=r; j++){
-                if(i==1 || i==r){
-                    System.out.print("*");
-                }else if(j == r-1  || j==r-2 || j==r-3 || j==c-1 || j==c-2 || j==c-3){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            for(int j=1 ; j<=i-j ; j++){
-                System.out.print(" ");
-            }
-            System.out.println();
-        }
-    }
-}
+//         for (int i = 1; i <= r; i++) {
+//             for (int j = 1; j <= r - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int j = 1; j <= r; j++) {
+//                 if (i == 1 || i == r) {
+//                     System.out.print("*");
+//                 } else if (j == r - 1 || j == r - 2 || j == r - 3 || j == c - 1 || j == c - 2 || j == c - 3) {
+//                     System.out.print("*");
+//                 } else {
+//                     System.out.print(" ");
+//                 }
+//             }
+//             for (int j = 1; j <= i - j; j++) {
+//                 System.out.print(" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+
+
+
+// Q .Number Pyramid
+
+//       1
+//      2 2
+//     3 3 3
+//    4 4 4 4
+//   5 5 5 5 5 
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         int r= 5;
+
+//         for(int i = 1 ; i<=r ; i++){
+//             //for-spaces
+//             for(int j=1 ; j<=r-i; j++){
+//                 System.out.print(" ");
+//             }
+
+//             //for-number
+//             for(int j = 1; j<=i ; j++){
+//                 System.out.print(" "+i);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }

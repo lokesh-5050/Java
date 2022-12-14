@@ -1167,24 +1167,24 @@
 // 123454321
 
 
-public class lec2{
-    public static void main(String argg[]) {
-        int r=5;
-        for(int i = 1 ; i<= r ; i++){
-            //space
-            for(int j = 1 ; j<=r-i ; j++){
-                System.out.print(" ");
-            }
-            //lef
-            for(int j = 1 ; j<=i ; j++ ){
-                System.out.print(j);
-            }
+// public class lec2{
+//     public static void main(String argg[]) {
+//         int r=5;
+//         for(int i = 1 ; i<= r ; i++){
+//             //space
+//             for(int j = 1 ; j<=r-i ; j++){
+//                 System.out.print(" ");
+//             }
+//             //lef
+//             for(int j = 1 ; j<=i ; j++ ){
+//                 System.out.print(j);
+//             }
 
-            //right
-            for(int j = i-1 ; j>0 ; j--){
-                System.out.print(j);
-            }
-            System.out.println();
-        }
-    }
-}
+//             //right
+//             for(int j = i-1 ; j>0 ; j--){
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
+//     }
+// } 

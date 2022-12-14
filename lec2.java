@@ -1048,10 +1048,114 @@
 //             }
 //             System.out.println();
 //         }
-       
+
 //     }
 // }
 
+// Q . Palindrome 121
+
+//     1
+//    121
+//   12321
+//  1234321
+// 123454321
+ 
+// public class lec2 {
+//     public static void main(String args[]) {
+//         int r = 5;
+
+//         for (int i = 1; i <= r; i++) {
+//             int forRight = i;
+//             // space
+//             for (int j = 1; j <= r - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             // lef
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(j);
+//             }
+//             // right
+//             for(int j = i-1 ; j>=1; j--){
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// Q. Palindrome Pattern
+
+//       1
+//      212
+//     32123
+//    4321234
+//   543212345
+
+// public class lec2 {
+// public static void main(String args[]) {
+// int r=5;
+// for(int i = 1 ; i<=r ; i++){
+// //space
+// for(int j =1 ; j<= r-i ; j++){
+// System.out.print(" ");
+// }
+
+// //left-side
+// // int var = i;
+// // for(int j =1 ; j<=i ; j++){
+// // System.out.print(var--);
+// // }
+
+// //left-side
+// for(int j = i ; j>0 ; j--){
+// System.out.print(j);
+// }
+
+// //right-side
+// for(int j =2 ; j<=i ; j++){
+// System.out.print(j);
+// }
+
+// System.out.println();
+// }
+// }
+// }
+
+
+
+
+
+
+// Q.  Palindrome Pattern
+
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345
+
+
+// public class lec2{
+//     public static void main(String args[]) {
+//         int r=5;
+//         for(int i = 1 ; i<=r ; i++){
+//             //space
+//             for(int j =1 ; j<=r-i; j++){
+//                 System.out.print(" ");
+//             }
+//             //lef
+//             for(int j=i ; j>0 ; j--){
+//                 System.out.print(j);
+//             }
+//             //right
+//             for(int j = 2 ; j<=i ; j++){
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
 
 
 // Q . Palindrome 121
@@ -1061,3 +1165,26 @@
 //   12321
 //  1234321
 // 123454321
+
+
+public class lec2{
+    public static void main(String argg[]) {
+        int r=5;
+        for(int i = 1 ; i<= r ; i++){
+            //space
+            for(int j = 1 ; j<=r-i ; j++){
+                System.out.print(" ");
+            }
+            //lef
+            for(int j = 1 ; j<=i ; j++ ){
+                System.out.print(j);
+            }
+
+            //right
+            for(int j = i-1 ; j>0 ; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}

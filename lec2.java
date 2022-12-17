@@ -1188,3 +1188,96 @@
 //         }
 //     }
 // } 
+
+
+// Q . Number Pyramid
+
+    //      1
+    //     2 2
+    //    3 3 3
+    //   4 4 4 4
+    //  5 5 5 5 5
+
+// public class r1 {
+//     public static void main(String args[]) {
+//         int r= 5;
+//         for(int  i =1 ; i<= r ; i++){
+//             //space
+//             for(int j =1 ; j<=r-i ; j++ ){
+//                 System.out.print(" ");
+//             }   
+//             //num logic
+//             for(int j = 1 ; j<=i ; j++){
+//                 System.out.print(" "+i);
+//             }
+//             System.out.println();
+//         }
+//     }
+    
+// }
+
+
+// Q . Palindrome Pattern
+
+        //     1
+        //    212
+        //   32123
+        //  4321234
+        // 543212345
+
+// public class lec2 {
+
+//     public static void main(String args[]) {
+//         int r =5; 
+//         for(int i = 1 ;i<=r ; i++){
+//             //space
+//             for(int j = 1 ; j<=r-i ; j++){
+//                 System.out.print(" ");
+//             }
+//             //left-palindrome-logic
+//             for(int j = i ; j>0 ; j--){
+//                 System.out.print(j);
+//             }
+//             //right
+//             for(int j = 2 ; j<=i ; j++){
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+
+// Q . Diamond pattern
+
+public class lec2 {
+
+    public static void main(String args[]) {
+        int r = 4;
+        
+        for(int i = 1 ; i<=r ; i++){
+            //space
+            for(int j = 1 ; j<=r-i ; j++){
+                System.out.print(" ");
+            }
+            //star - top
+            for(int j = 0 ; j< 2*i-1 ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //down
+        for(int i = r ; i>0 ; i--){
+            //space
+            for(int j = 1 ; j<=r-i ; j++){
+                System.out.print(" ");
+            }
+            //star - top
+            for(int j = 0 ; j< 2*i-1 ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}

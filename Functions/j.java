@@ -47,7 +47,11 @@ import java.util.*;
 // Q .Find the factorial of a number
 
 public class j {
-    public static int sum(int n1) {
+    public static void sum(int n1) {
+        if (n1 < 0) {
+            System.out.println("Invalid input");
+            return;
+        }
         int prevNum = 1;
 
         for (int i = n1; i >= 1; i--) {
@@ -55,7 +59,7 @@ public class j {
 
         }
         System.out.println(prevNum);
-        return prevNum;
+        return ;
     }
 
     public static void main(String args[]) {

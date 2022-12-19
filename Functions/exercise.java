@@ -51,3 +51,18 @@ import java.util.*;
 //             whichIsGreator(i1,i2);
 //         }
 //     }
+
+// // Q.4 Write a function that takes in the radius as input and returns the circumference of a circle.
+// public class exercise {
+//     public static void circumferenceOfCir(int r1) {
+//         double pi = 3.141592653589793238;
+//         double circumference = 2 * pi * r1;
+//         System.out.println(circumference);
+//     }
+
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int r1 = sc.nextInt();
+//         circumferenceOfCir(r1);
+//     }
+// }

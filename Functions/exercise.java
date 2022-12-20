@@ -104,32 +104,102 @@ import java.util.*;
 // }
 
 // Q.7 Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered.
+// public class exercise {
+
+//     public static void main(String args[]) {
+//         System.out.println("enter 1 to start ");
+//         int positive = 0 , negative = 0, zeros = 0;
+//         Scanner sc = new Scanner(System.in);
+//         int more = sc.nextInt();
+
+//         while (more == 1) {
+//             System.out.println("Enter numbers");
+//             int number = sc.nextInt();
+//             if(number>0){
+//                 positive++;
+
+//             }else if(number<0){
+//                 negative++;
+
+//             }else{
+//                 zeros++;
+//                 System.out.println("positive =>" +  positive);
+//                 System.out.println("negative =>" +  negative);
+//                 System.out.println("zeros =>" +  zeros);
+//             }
+
+//         }
+
+//     }
+// }
+
+// Q.8 Two numbers are entered by the user, x and n. Write a function to find the value 
+// of one number raised to the power of another i.e. xn.
+// public class exercise {
+//     public static double calPowerValues(int x,int n){
+//          if(n==0){
+//             return 1;
+//          }else{
+//             return Math.pow(x, n);
+//          }
+
+//     }
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int x = sc.nextInt();
+//         int n = sc.nextInt();
+
+//         // calPowerValues(x,n);
+//         System.out.println("The "+ x + " "+ " to " + n + " is " + " => " + calPowerValues(x, n));
+//     }
+// }
+
+// Q.9 Write a function that calculates the Greatest Common Divisor of 2 numbers. 
+// public class exercise {
+//     public static int gcd(int a , int b){
+//         int smallestNum;
+//         if(a<b){
+//             smallestNum = a;
+//         }else{
+//             smallestNum = b;
+//         }
+
+//         //takig a for loop starts form smallest iterartion
+//         for(int i = smallestNum ; i>1 ; i--){
+//             if(a%i == 0 && b%i ==0){
+//                 return i;
+//             }
+//         }
+//         return 1;
+//     }
+
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         System.out.println("Gcd of "+a +" "+ b + " " + " is => "+ gcd(a, b));
+//     }
+// }
+
+// Q.10 Write a program to print Fibonacci series of n terms where n is input by user :
+// 0 1 1 2 3 5 8 13 21 ..... 
+// In the Fibonacci series, a number is the sum of the previous 2 numbers that came before it.
+
 public class exercise {
+    public static void fibonacci(int n){
+        int n1 =0 , n2 =1 , next_num;
+        for(int i = 1; i<=n ;i++){
+            System.out.println(n1);
+            next_num = n1+n2;
+            //swapping 
+            n1=n2;
+            n2=next_num;
+        }
+    }
 
     public static void main(String args[]) {
-        System.out.println("enter 1 to start ");
-        int positive = 0 , negative = 0, zeros = 0;
         Scanner sc = new Scanner(System.in);
-        int more = sc.nextInt();
-
-        while (more == 1) {
-            System.out.println("Enter numbers");
-            int number = sc.nextInt();
-            if(number>0){
-                positive++;
-               
-            }else if(number<0){
-                negative++;
-               
-            }else{
-                zeros++;
-                System.out.println("positive =>" +  positive);
-                System.out.println("negative =>" +  negative);
-                System.out.println("zeros =>" +  zeros);
-            }
-
-        }
-
-     
+        int n = sc.nextInt();
+        fibonacci(n);
     }
 }

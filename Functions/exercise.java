@@ -66,3 +66,70 @@ import java.util.*;
 //         circumferenceOfCir(r1);
 //     }
 // }
+
+// Q.5 Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote.
+
+// public class exercise {
+//     public static void isElegible(int age){
+//         if(age>18){
+//             System.out.println("Eligible");
+//             return;
+//         };
+//         System.out.println("Not Eligable");
+//         return;
+//     }
+
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int age = sc.nextInt();
+//         isElegible(age);
+//     }
+// }
+
+// Q.6  Write an infinite loop using do while condition.
+// public class exercise {
+//     public static void infiniteLoop(int i) {
+//         do {
+//             System.out.println("Hello");
+//         } while (i != 0);
+//     }
+
+//     public static void main(String args[]) {
+//         // // Scanner sc = new Scanner(System.in);
+//         // // int i = sc.nextInt();
+//         // int i =1;
+//         infiniteLoop(i);
+
+//     }
+// }
+
+// Q.7 Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered.
+public class exercise {
+
+    public static void main(String args[]) {
+        System.out.println("enter 1 to start ");
+        int positive = 0 , negative = 0, zeros = 0;
+        Scanner sc = new Scanner(System.in);
+        int more = sc.nextInt();
+
+        while (more == 1) {
+            System.out.println("Enter numbers");
+            int number = sc.nextInt();
+            if(number>0){
+                positive++;
+               
+            }else if(number<0){
+                negative++;
+               
+            }else{
+                zeros++;
+                System.out.println("positive =>" +  positive);
+                System.out.println("negative =>" +  negative);
+                System.out.println("zeros =>" +  zeros);
+            }
+
+        }
+
+     
+    }
+}

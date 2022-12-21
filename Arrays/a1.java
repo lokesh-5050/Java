@@ -84,6 +84,7 @@
 // }
 
 // Q1. Take an array of names as input from the user and print them on the screen.
+import java.lang.reflect.Array;
 import java.util.*;
 
 // public class a1 {
@@ -131,32 +132,61 @@ import java.util.*;
 // }
 
 
-// Q.2 Take an array of numbers as input and check if it is an array sorted in ascending order.
+// Q.2 reverse the array;
 
-public class a1 {
+// public class a1 {
 
-    public static void reverse(int[] nums){
-        int n = nums.length;
+//     public static void reverse(int[] nums){
+//         int n = nums.length;
 
-        for(int i =0 ; i<n/2 ; i++){
-            //storing first half temporaary
-            int temp = nums[i];
+//         for(int i =0 ; i<n/2 ; i++){
+//             //storing first half temporaary
+//             int temp = nums[i];
 
-            //assigning fist half to the second half
-            nums[i] = nums[n-i-1];
+//             //assigning fist half to the second half
+//             nums[i] = nums[n-i-1];
 
-            //assigning second half to the first half
-            nums[n-i-1] = temp;
-        }
+//             //assigning second half to the first half
+//             nums[n-i-1] = temp;
+//         }
 
-        //printing all the values
-        for(int i =0 ; i<n ; i++){
-            System.out.println(nums[i]);
-        }
-    }
-    public static void main(String args[]) {
-        int nums[] = {4,84,2131,54,21,58,24,99,34,90};
-        reverse(nums);
+//         //printing all the values
+//         for(int i =0 ; i<n ; i++){
+//             System.out.println(nums[i]);
+//         }
+//     }
+//     public static void main(String args[]) {
+//         int nums[] = {4,84,2131,54,21,58,24,99,34,90};
+//         reverse(nums);
 
-    }
-}
+//     }
+// }
+
+// Q3. Take an array of numbers as input and check if it is an array sorted in ascending order.
+
+// public class a1 {
+
+//     public static void main(String args[]) {
+//         System.out.println("Please enter the array size!");
+//         Scanner sc = new Scanner(System.in);
+//         int size = sc.nextInt();
+
+//         int numbers[] = new int[size];
+
+//         //initializing the array values
+//         for(int i = 0 ; i<numbers.length ; i++){
+//             numbers[i] = sc.nextInt();
+//         }
+
+//         //showing the ready array
+//         for(int  i = 0 ; i<numbers.length ; i++){
+//             System.out.println(numbers[i]);
+//         }
+
+//         int numCopy[] = Arrays.copyOf(numbers, size);
+//         Arrays.sort(numCopy);   
+
+       
+//         System.out.println( Arrays.equals(numbers, numCopy));
+//     }
+// }

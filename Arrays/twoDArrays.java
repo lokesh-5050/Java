@@ -112,38 +112,74 @@ public class twoDArrays {
     int last_col = c - 1;
 
     //1
-    for(int i=0;i<r-last_row ; i++){
-        for(int j = 0 ; j<c ;j++){
-            System.out.print(number[i][j]+" ");
-        }
-        System.out.print(" ");
+    for (int i = 0; i < r - last_row; i++) {
+      for (int j = 0; j < c; j++) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
     }
-    
+
     //2nd
-    for(int i = 1 ;i<r ; i++){
-        for(int j = last_col ; j<c ; j++ ){
-            System.out.print(number[i][j]+ " ");
-        }
-        System.out.print(" ");
+    for (int i = 1; i < r; i++) {
+      for (int j = last_col; j < c; j++) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
     }
 
     //3rd
-    for(int i = last_row ; i<r ; i++){
-        for(int j = last_col-1 ; j>=0 ; j-- ){
-            System.out.print(number[i][j]+ " ");
-        }
-        System.out.print(" ");
+    for (int i = last_row; i < r; i++) {
+      for (int j = last_col - 1; j >= 0; j--) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
     }
 
     //4th
-    for(int i = last_row-1 ; i>0 ; i--){
-        for(int j = c-last_col ; j<=c-last_col ; j++){
-            System.out.print(number[i][j]+ " ");
-        }
-        System.out.print(" ");
+    for (int i = last_row - 1; i > 0; i--) {
+      for (int j = 0; j < c - last_col; j++) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
     }
 
+    //5th
+    for (int i = 1; i < last_row - 2; i++) {
+      for (int j = c - last_col; j < last_col; j++) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
+    }
 
+    //6th
+    for (int i = 2; i < last_row; i++) {
+      for (int j = last_col - 1; j < last_col; j++) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
+    }
 
+    //7th
+    for (int i = last_row - 1; i > 0; i--) {
+      for (int j = last_col - 2; j > 0; j--) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
+    }
+
+    //8th
+    for (int i = 2; i < last_row - 1; i++) {
+      for (int j = 1; j < last_col - 1; j++) {
+        System.out.print(number[i][j] + " ");
+      }
+      System.out.print("");
+    }
+    // //9th
+    // for (int i = 2; i < last_row - 1; i++) {
+    //   for (int j = last_col - 3; j < last_col - 1; j++) {
+    //     System.out.print(number[i][j] + " ");
+    //   }
+    //   System.out.print(" ");
+    // }
   }
 }

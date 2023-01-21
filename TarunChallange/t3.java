@@ -30,7 +30,7 @@ public class t3 {
       i++;
       j--;
     }
-
+    
     System.out.println(Arrays.toString(arr));
   }
 }

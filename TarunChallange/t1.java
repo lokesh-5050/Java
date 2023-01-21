@@ -23,7 +23,7 @@ public class t1 {
 
     int rs = 0, re = r - 1;
     int cs = 0, ce = c - 1;
-    
+    while(cs<ce){
       //1st loop
       for (int i = rs; i <= re; i++) {
         System.out.print(number[i][cs] + " ");
@@ -44,6 +44,8 @@ public class t1 {
       for (int i = re; i >= rs; i--) {
         System.out.print(number[i][cs] + " ");
       }
+      c++;
+    }
     
   }
 }
